@@ -29,8 +29,13 @@ header{
 }
 header h1{
     font-weight:200px;
-
 }
+
+#titulojovix{
+    color: rgb(0, 81, 255);
+}
+
+
 main{
     flex:1;
     display:flex;
@@ -86,13 +91,14 @@ main{
     transform: scaleX(-1);
 }
 
-.btn-camera{
+#btn-camera{
     background:rgb(255, 255, 255);
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: color(black);
     margin-top: 10px;
+    cursor: pointer;
 
 }
 
@@ -166,7 +172,7 @@ footer p{
     gap: 5px;
     min-height: 50px;
     position: relative;
-    bottom: 325px;
+    bottom: 410px;
     
 }
 
@@ -189,4 +195,31 @@ footer p{
     border-radius: 15px;
     padding: 8px;
     border: 3px solid blue;
+}
+
+.botoes{
+    position: relative;
+    bottom: 700px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.botoes button{
+    width: 220px;
+    height: 45px;
+    border-radius: 20px;
+    border: 3px solid blue;
+    background: blue;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botoes button:hover{
+    transform: scale(1.05);
+    background: rgba(0, 157, 196, 0.877);
+    border: 3px solid rgba(0, 157, 196, 0.877);
 }

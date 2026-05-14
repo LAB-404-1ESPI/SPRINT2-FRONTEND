@@ -11,9 +11,9 @@
     <title>GALERIA</title>
 
 </head>
-<body>
+<body> 
     <header>
-        <h1>GALERIA JOVIX</h1>
+        <h1>GALERIA <span id="titulojovix">JOVIX</span></h1>
     </header>
     <main>
         <div class="container">
@@ -23,7 +23,7 @@
             </div>
                 
             <video id="video" autoplay playsinline></video>
-            <button href="../index.html" class="btn-camera"></button>
+            <button id="btn-camera"></button>
             <div class="jovix">
                 <img src="../src/assets/img/IA JOVIX.png" alt="ia">
             </div>
@@ -31,11 +31,14 @@
                 <p>Resposta gerada por IA</p>
             </div>
             <div class="conteudojovix">
-                <p>Olá. Eu sou JOVIX, a assistente de Inteligência Artificial da JOVI</p>
-                <p>Como posso te ajudar hoje?</p>
+                <p>Gostaria de ver o banco de questões?</p>
+                <p>Ou a galeria de imagens?</p>
             </div>
-
-
+            <div class="botoes">
+                <button id="btn-materias">MATÉRIAS</button>
+                <button id="btn-banco">BANCO DE QUESTÕES</button>
+            </div>
+            
             
             <div class="caixatexto">
                 <input type="text" placeholder="Pergunte alguma coisa..." class="texto">
@@ -45,6 +48,8 @@
             </div>
             
 
+            
+
         </div>
     </main>
 
@@ -52,6 +57,6 @@
         <p>&copy;- 2026- Todos os direitos reservados.</p>
     </footer>
 
-    <script src="./src/js/script.js"></script>
+    <script src="../src/js/galeria.js"></script>
 </body>
 </html>

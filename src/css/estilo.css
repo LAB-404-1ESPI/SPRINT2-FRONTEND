@@ -29,8 +29,12 @@ header{
 }
 header h1{
     font-weight:200px;
-
 }
+
+#titulojovix{
+    color: rgb(0, 81, 255);
+}
+
 main{
     flex:1;
     display:flex;
@@ -144,6 +148,32 @@ footer p{
     left: 40px;
 }
 .galeria img{
+    width: 60px; /* tamanho da imagem */
+    height: auto;
+    cursor: pointer; /* muda o cursor ao passar o mouse */
+    transition: transform 0.2s ease; /* animação suave */
+}
+
+.galeria{
+    position: absolute;
+    bottom: 100px;
+    z-index: 101;
+    left: 40px;
+}
+.galeria img{
+    width: 60px; /* tamanho da imagem */
+    height: auto;
+    cursor: pointer; /* muda o cursor ao passar o mouse */
+    transition: transform 0.2s ease; /* animação suave */
+}
+
+.btn-inverter{
+    position: absolute;
+    bottom: 100px;
+    z-index: 101;
+    right: 40px;
+}
+.btn-inverter img{
     width: 60px; /* tamanho da imagem */
     height: auto;
     cursor: pointer; /* muda o cursor ao passar o mouse */

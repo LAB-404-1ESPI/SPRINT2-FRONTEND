@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <h1>IA JOVIX</h1>
+        <h1>IA <span id="titulojovix">JOVIX</span></h1>
     </header>
     <main>
         <div class="container">
@@ -23,7 +23,7 @@
             </div>
                 
             <video id="video" autoplay playsinline></video>
-            <button href="../index.html" class="btn-camera"></button>
+            <button id="btn-camera"></button>
             <div class="jovix">
                 <img src="../src/assets/img/IA JOVIX.png" alt="ia">
             </div>
@@ -34,15 +34,18 @@
                 <p>Olá. Eu sou JOVIX, a assistente de Inteligência Artificial da JOVI</p>
                 <p>Como posso te ajudar hoje?</p>
             </div>
-
-
-            
             <div class="caixatexto">
                 <input type="text" placeholder="Pergunte alguma coisa..." class="texto">
                 <div class="enviar">
                     <img src="../src/assets/img/enviar.png">
                 </div>
             </div>
+            <div class="botoes">
+                <button id="botaomateria"></button>
+            </div>
+
+
+            
             
 
         </div>
@@ -52,6 +55,6 @@
         <p>&copy;- 2026- Todos os direitos reservados.</p>
     </footer>
 
-    <script src="./src/js/script.js"></script>
+    <script src="../src/js/jovix.js"></script>
 </body>
 </html>

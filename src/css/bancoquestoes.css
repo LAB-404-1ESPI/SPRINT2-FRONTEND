@@ -1,0 +1,49 @@
+:root{
+    --primary-color: #0011ff;
+    --secondary-color: #0059ff;
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --font-family: Arial, sans-serif;
+    --cor-hover: #1f3033;
+}
+
+
+
+
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#materias{
+    border: 2px solid var(--primary-color);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+#matematica, #historia, #geografia{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#matematica:hover, #historia:hover, #geografia:hover{
+    background-color: var(--cor-hover);
+    transition: all 0.2s ease;
+    transform: translateY(-5px);
+}
