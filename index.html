@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <!-- API EXTERNA -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+
     <title>Câmera Jovix</title>
+
 </head>
 <body>
-    
+    <header>
+        <h1>Câmera Jovix</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="span">
+                <span></span>
+            </div>
+            <a href="./pages/jovix.html" class="logo-topo">
+                <img src="./src/assets/img/IA JOVIX.png" alt="Logo">
+            </a>
+
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+            <button id="btn-camera"></button>
+            <button id="btn-camera2"></button>
+            <a href="./pages/galeria.html" class="galeria">
+                <img src="./src/assets/img/galeria.png" alt="galeria">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;- 2026- Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
