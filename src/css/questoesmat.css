@@ -9,6 +9,7 @@
 
 
 
+
 body{
     background: var(--background-color);
     color: var(--text-color);
@@ -19,7 +20,7 @@ body{
     height: 100vh;
 }
 
-#materias{
+#questoes{
     border: 2px solid var(--primary-color);
     padding: 50px;
     border-radius: 20px;
@@ -30,7 +31,7 @@ body{
     
 }
 
-#matematica, #historia, #geografia{
+.botaoquestao{
     background-color: var(--primary-color);
     color: var(--text-color);
     border: none;
@@ -41,8 +42,33 @@ body{
     font-size: 16px;
 }
 
-#matematica:hover, #historia:hover, #geografia:hover{
+.botaoquestao:hover{
     background-color: var(--cor-hover);
     transition: all 0.2s ease;
     transform: translateY(-5px);
+}
+
+.respostaia{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 16px auto 0 auto;
+    
+}
+.respostaia:hover{
+    background-color: var(--cor-hover);
+    transition: all 0.2s ease;
+    transform: translateY(-5px);
+}
+
+#imagemia{
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 100px;
+    height: auto;
 }

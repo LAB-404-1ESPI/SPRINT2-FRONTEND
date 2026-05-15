@@ -12,7 +12,7 @@
     box-sizing:border-box;
 }
 body{
-    background:var(--bgColor1);
+    background: lightblue;
     font-family:var(--fontFamily);
     display:flex;
     flex-direction:column;
