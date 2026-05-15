@@ -7,42 +7,116 @@
     --cor-hover: #1f3033;
 }
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     background: var(--background-color);
     color: var(--text-color);
     font-family: var(--font-family);
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
+    min-height: 100vh;
+    padding: 20px;
 }
 
 #materias{
     border: 2px solid var(--primary-color);
-    padding: 50px;
+    padding: 40px 30px;
     border-radius: 20px;
     text-align: center;
     background-color: var(--secondary-color);
-    margin-top: 0;
-    margin-bottom: 0;
-    
+
+    width: 100%;
+    max-width: 500px;
 }
 
-#matematica, #historia, #geografia{
+#materias h1{
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#matematica, 
+#historia, 
+#geografia{
     background-color: var(--primary-color);
     color: var(--text-color);
     border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
+
+    padding: 12px 20px;
+    border-radius: 8px;
+
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
+
+    transition: all 0.2s ease;
 }
 
-#matematica:hover, #historia:hover, #geografia:hover{
+#matematica:hover, 
+#historia:hover, 
+#geografia:hover{
     background-color: var(--cor-hover);
-    transition: all 0.2s ease;
     transform: translateY(-5px);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+
+    #materias{
+        padding: 30px 20px;
+    }
+
+    #materias h1{
+        font-size: 1.6rem;
+    }
+
+    .botoes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #matematica, 
+    #historia, 
+    #geografia{
+        width: 100%;
+        max-width: 250px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px){
+
+    body{
+        padding: 15px;
+    }
+
+    #materias{
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    #materias h1{
+        font-size: 1.4rem;
+    }
+
+    #matematica, 
+    #historia, 
+    #geografia{
+        padding: 14px;
+        font-size: 0.9rem;
+    }
 }

@@ -139,7 +139,7 @@ footer p{
     width: 80px;
     height: 80px;
     position: relative;
-    bottom: 750px;
+    bottom: 600px;
 }
 
 .respostaia{
@@ -213,4 +213,191 @@ footer p{
     transform: scale(1.05);
     background: rgba(0, 157, 196, 0.877);
     border: 3px solid rgba(0, 157, 196, 0.877);
+}
+
+.jovix{
+    position: absolute; /* permite posicionar livremente */
+    z-index: 10; /* garante que fique por cima */
+}
+
+.jovix img{
+    width: 80px; /* tamanho da imagem */
+    height: auto;
+    cursor: pointer; /* muda o cursor ao passar o mouse */
+    transition: transform 0.2s ease; /* animação suave */
+}
+
+/* efeito ao passar o mouse */
+.jovix img:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    position: relative;
+    bottom: 700px;
+    
+}
+.card p{
+    color:white;
+    position: relative;
+    left:10px;
+    padding:10px;
+    text-align:left;
+}
+.texto1{
+    color:white;
+    position:relative;
+    bottom:725px;
+    left:10px;
+}
+.card1{
+    cursor: pointer; /* muda o cursor ao passar o mouse */
+    transition: transform 0.2s ease; /* animação suave */
+}
+.card1 img:hover{
+    transform: scale(1.03);
+}
+.card2{
+    cursor: pointer; /* muda o cursor ao passar o mouse */
+    transition: transform 0.2s ease; /* animação suave */
+}
+.card2 img:hover{
+    transform: scale(1.03);
+}
+.card3{
+    cursor: pointer; /* muda o cursor ao passar o mouse */
+    transition: transform 0.2s ease; /* animação suave */
+}
+.card3 img:hover{
+    transform: scale(1.03);
+}
+@media (max-width: 768px){
+
+    header{
+        padding: 0.8rem;
+    }
+
+    header h1{
+        font-size: 1.6rem;
+    }
+
+    main{
+        padding: 15px;
+    }
+
+    .container{
+        max-width: 320px;
+        padding: 18px;
+        border-radius: 35px;
+        max-height: 700px;
+    }
+
+    .span{
+        margin-left: 110px;
+        width: 70px;
+    }
+
+    .texto1{
+        font-size: 1.8rem;
+        bottom: 560px;
+    }
+
+    .card{
+        bottom: 540px;
+    }
+
+    .card p{
+        font-size: 14px;
+    }
+
+    .card1 img,
+    .card2 img,
+    .card3 img{
+        width: 100%;
+        max-width: 240px;
+        border-radius: 20px;
+    }
+
+    #video{
+        max-height:430px;
+    }
+    .jovix{
+        bottom: 500px;
+        left: 20px;
+    }
+
+    .jovix img{
+        width: 60px;
+    }
+
+    .logo-topo{
+        top: 40px;
+        left: 15px;
+    }
+
+    .logo-topo img{
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px){
+
+    header h1{
+        font-size: 1.2rem;
+    }
+
+    .container{
+        max-width: 260px;
+        padding: 15px;
+        border-radius: 30px;
+        max-height: 560px;
+    }
+
+    .span{
+        margin-left: 78px;
+        width: 60px;
+        height: 20px;
+    }
+
+    .texto1{
+        font-size: 1.4rem;
+        bottom: 445px;
+        left: 5px;
+    }
+
+    .card{
+        bottom: 430px;
+    }
+
+    .card p{
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    .card1 img,
+    .card2 img,
+    .card3 img{
+        width: 100%;
+        max-width: 190px;
+        border-radius: 15px;
+    }
+
+    .jovix{
+        bottom: 405px;
+        left: 0;
+    }
+
+    .jovix img{
+        width: 45px;
+    }
+
+    .logo-topo img{
+        width: 50px;
+    }
+
+    footer p{
+        font-size: 10px;
+        text-align: center;
+        padding: 10px;
+    }
 }

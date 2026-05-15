@@ -179,3 +179,120 @@ footer p{
     cursor: pointer; /* muda o cursor ao passar o mouse */
     transition: transform 0.2s ease; /* animação suave */
 }
+@media (max-width: 768px){
+
+    header{
+        padding: 0.8rem;
+    }
+
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    main{
+        padding: 15px;
+    }
+
+    .container{
+        max-width: 320px;
+        padding: 18px;
+        border-radius: 35px;
+    }
+
+    #video{
+        height: 500px;
+        border-radius: 15px;
+    }
+
+    .span{
+        margin-left: 110px;
+        width: 70px;
+    }
+
+    #btn-camera,
+    #btn-camera2{
+        width: 45px;
+        height: 45px;
+    }
+
+    .galeria{
+        bottom: 75px;
+        left: 25px;
+    }
+
+    .btn-inverter{
+        bottom: 75px;
+        right: 25px;
+    }
+
+    .galeria img,
+    .btn-inverter img{
+        width: 45px;
+    }
+
+    .logo-topo{
+        top: 40px;
+        right: 15px;
+    }
+
+    .logo-topo img{
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px){
+
+    header h1{
+        font-size: 1.2rem;
+    }
+
+    .container{
+        max-width: 260px;
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    #video{
+        height: 380px;
+    }
+
+    .span{
+        margin-left: 78px;
+        width: 60px;
+        height: 20px;
+    }
+
+    #btn-camera,
+    #btn-camera2{
+        width: 40px;
+        height: 40px;
+    }
+
+    #btn-camera{
+        left: 20px;
+    }
+
+    #btn-camera2{
+        right: 15px;
+        bottom: 70px;
+    }
+
+    .galeria{
+        bottom: 80px;
+        left: 18px;
+    }
+
+    .btn-inverter{
+        bottom: 80px;
+        right: 18px;
+    }
+
+    .galeria img,
+    .btn-inverter img{
+        width: 38px;
+    }
+
+    .logo-topo img{
+        width: 50px;
+    }
+}

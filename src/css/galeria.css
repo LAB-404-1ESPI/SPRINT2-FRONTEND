@@ -214,3 +214,162 @@ footer p{
     background: rgba(0, 157, 196, 0.877);
     border: 3px solid rgba(0, 157, 196, 0.877);
 }
+
+@media (max-width: 768px){
+
+    header{
+        padding: 0.8rem;
+    }
+
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    main{
+        padding: 15px;
+    }
+
+    .container{
+        max-width: 320px;
+        padding: 18px;
+        border-radius: 35px;
+        max-height: 650px;
+    }
+
+    #video{
+        height: 500px;
+        border-radius: 15px;
+    }
+
+    .span{
+        margin-left: 110px;
+        width: 70px;
+    }
+
+    .logo-topo{
+        top: 40px;
+        right: 15px;
+    }
+
+    .logo-topo img{
+        width: 60px;
+    }
+
+    .jovix{
+        width: 60px;
+        height: 60px;
+        bottom: 540px;
+    }
+
+    .respostaia{
+        bottom: 590px;
+        margin-left: 65px;
+        font-size: 13px;
+    }
+
+    .conteudojovix{
+        bottom: 590px;
+        margin-left: 45px;
+        width: 220px;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .caixatexto{
+        bottom: 300px;
+    }
+
+    .texto{
+        width: 240px;
+        font-size: 14px;
+    }
+
+    .botoes{
+        bottom: 520px;
+        gap: 10px;
+    }
+
+    .botoes button{
+        width: 180px;
+        height: 40px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px){
+
+    header h1{
+        font-size: 1.2rem;
+    }
+
+    .container{
+        max-width: 260px;
+        padding: 15px;
+        border-radius: 30px;
+        max-height: 540px;
+    }
+
+    #video{
+        height: 380px;
+    }
+
+    .span{
+        margin-left: 78px;
+        width: 60px;
+        height: 20px;
+    }
+
+    .logo-topo img{
+        width: 50px;
+    }
+
+    .jovix{
+        width: 45px;
+        height: 45px;
+        bottom: 430px;
+        margin-left: -2px;
+    }
+
+    .respostaia{
+        bottom: 470px;
+        margin-left: 48px;
+        font-size: 10px;
+    }
+
+    .conteudojovix{
+        bottom: 470px;
+        margin-left: 30px;
+        width: 180px;
+        font-size: 9px;
+        padding: 7px;
+        border-radius: 18px;
+    }
+
+    .caixatexto{
+        bottom: 220px;
+    }
+
+    .texto{
+        width: 190px;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .botoes{
+        bottom: 410px;
+        gap: 8px;
+    }
+
+    .botoes button{
+        width: 150px;
+        height: 36px;
+        font-size: 12px;
+        border-radius: 15px;
+    }
+
+    footer p{
+        font-size: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+}
